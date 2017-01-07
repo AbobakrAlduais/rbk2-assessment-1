@@ -1,3 +1,18 @@
 var Stack = function() {
-	//your code is here
+	var size=0;
+	return {
+		_storage:{},
+		add:function(value){
+			this._storage[size++]=value
+			return value;
+		},
+		remove:function(){
+			var st=this._storage[size-1]
+			delete this._storage[size-1];
+			size--;
+			return st;
+
+		}
+
+}	
 };
