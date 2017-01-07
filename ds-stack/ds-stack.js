@@ -9,7 +9,7 @@ var Stack = function() {
 		remove:function(){
 			var st=this._storage[size-1]
 			delete this._storage[size-1];
-			size--;
+			(size!==0)?size--:null
 			return st;
 
 		}
